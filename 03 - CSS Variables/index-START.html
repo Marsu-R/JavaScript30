@@ -82,6 +82,7 @@
         const suffix = this.dataset.sizing || ""; // refers to the data attribute "data-sizing" or to the color picker which only has a value, no suffix
         //console.log(suffix); // "px" or nothing
         console.log(this.name); // "spacing", "blur", or "base"
+        // set the properties and their values:
         document.documentElement.style.setProperty(
           `--${this.name}`,
           this.value + suffix
